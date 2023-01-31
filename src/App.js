@@ -13,6 +13,7 @@ import SharedProductLayout from './pages/SharedProductLayout.js';
 import SharedLayout from './Components/SharedLayout.js';
 import AxiosExample from './pages/AxiosExample.js';
 import ExamplePage from './pages/ExamplePage.js';
+import TestPage from './pages/TestPage.js';
 
 // import Greeting from './greeting.js';
 // import Booklist from './numbers.js';
@@ -45,6 +46,8 @@ function App() {
               <Route path='axiosexample' element={<AxiosExample />} />
 
               <Route path='examplepage' element={<ExamplePage /> } />
+
+              <Route path='testpage' element={<TestPage />} />
             
             
             </Route>

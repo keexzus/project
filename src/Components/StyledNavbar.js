@@ -40,6 +40,13 @@ const Navbar = () => {
         > Example Page
         </NavLink>
 
+        <NavLink
+        to='testpage'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+        > Test Page
+        </NavLink>
+
+
     </nav>
   );
 };
