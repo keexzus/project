@@ -1,24 +1,34 @@
 import React from "react";
 import '../index.css';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const ExperimentPage = () => {
-    const [value, setValue] = useState(0);
-    const reset = () => {
-             setValue(0);
-            };
+const UseEffectCleanup = () => {
+    const [size, setSize] = useState(window.innerWidth);
+  
+    const checkSize = () => {
+      setSize(window.innerWidth);
+    };
+  
+    useEffect(() => {
+      console.log('useEffect');
+      window.addEventListener('resize', checkSize);
+      // can use code below or dependency array
+    //   return () => {
+    //     console.log('cleanup');
+    //     window.removeEventListener('resize', checkSize);
+    //   };
+    }, [] );
+    console.log('render');
+   
+    return (
+      <>
+        <section className='section'>  
+        <h1>window</h1>
+        <h2>{size} PX</h2>
+        </section>
+      </>
+    );
+  };
   
 
-    return(
-        <>
-       
-       <section className='section'>  
-       <h2>Experiment with Code</h2>
-       <h2>{value}</h2>
-       </section>
-
-        </>
-    );
-};
-
-export default ExperimentPage
+export default UseEffectCleanup;
