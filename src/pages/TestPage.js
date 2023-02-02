@@ -14,6 +14,7 @@ const ExperimentPage = () => {
        
        <section className='section'>  
        <h2>Experiment with Code</h2>
+       <h2>{value}</h2>
        </section>
 
         </>

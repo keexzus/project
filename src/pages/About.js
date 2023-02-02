@@ -1,20 +1,26 @@
 import React from "react";
 import '../index.css';
-import {useState} from 'react';
+import { useState, useEffect } from 'react';
 // import { data } from '../data3.js'
 // import { Simulate } from "react-dom/test-utils";
 
 const CounterStateCounter = () => {
   const [value, setValue] = useState(0);
+  useEffect(() => {
+    document.title =`New Messages(${value})`;
+  });
   const reset = () => {
            setValue(0);
           };
+         
+          
 
     return(
          <>
        <section className='section'>
 
         <h2>Skills Counter</h2>
+        <h2>Get New Messages!</h2>
         <h1>{value}</h1>
         
         <button className='btn' onClick={() => setValue
@@ -26,6 +32,7 @@ const CounterStateCounter = () => {
         </button>
 
       </section>
+
           
        
          </>

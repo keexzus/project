@@ -2,16 +2,19 @@ import React from 'react';
 import '../index.css';
 import { data } from '../data2.js';
 // import useState from 'react';
-
 const UseStateArray = () => {
     const [people, setPeople] = React.useState(data);
     
     const removeItem = (id) => {
-    let newPeople = people.filter((person) => person.id !== id);
-    setPeople(newPeople);
-  };
-
-  return (
+      setPeople((oldPeople) => {
+        let newPeople = oldPeople.filter((person) => person.id !== id);
+        return newPeople;
+      });
+      }
+       // let newPeople = people.filter((person) => person.id !== id);
+    // setPeople(newPeople);
+    
+ return (
     <> 
       {people.map((person) => {
             const { id, name } = person;
@@ -32,5 +35,4 @@ const UseStateArray = () => {
     </>
   );
 };
-
 export default UseStateArray;

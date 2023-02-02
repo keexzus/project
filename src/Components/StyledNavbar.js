@@ -13,7 +13,7 @@ const Navbar = () => {
         to='/about'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
       >
-        About
+        Counter
       </NavLink>
       <NavLink
         to='/products'
