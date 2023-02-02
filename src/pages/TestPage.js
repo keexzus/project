@@ -1,34 +1,37 @@
-import React from "react";
-import '../index.css';
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-const UseEffectCleanup = () => {
-    const [size, setSize] = useState(window.innerWidth);
-  
-    const checkSize = () => {
-      setSize(window.innerWidth);
-    };
-  
-    useEffect(() => {
-      console.log('useEffect');
-      window.addEventListener('resize', checkSize);
-      // can use code below or dependency array
-    //   return () => {
-    //     console.log('cleanup');
-    //     window.removeEventListener('resize', checkSize);
-    //   };
-    }, [] );
-    console.log('render');
-   
-    return (
-      <>
-        <section className='section'>  
-        <h1>window</h1>
-        <h2>{size} PX</h2>
-        </section>
-      </>
-    );
+const ShowHide = () => {
+  const [show, setShow] = useState(false);
+  return (
+    <>
+    <div className='section'>  
+      <button className='btn' onClick={() => setShow(!show)}>
+        show/hide
+      </button>
+      {show && <Item />}
+      </div>
+    </>
+  );
+};
+
+const Item = () => {
+  const [size, setSize] = useState(window.innerWidth);
+  const checkSize = () => {
+    setSize(window.innerWidth);
   };
-  
+  useEffect(() => {
+    window.addEventListener('resize', checkSize);
+    return () => {
+      window.removeEventListener('resize', checkSize);
+    };
+  }, []);
 
-export default UseEffectCleanup;
+  return (
+    <div style={{ marginTop: '2rem' }}  >
+      <h1>Window</h1>
+      <h2>size : {size}</h2>
+    </div>
+  );
+};
+
+export default ShowHide;
