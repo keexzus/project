@@ -18,7 +18,8 @@ const Login = ({ setUser }) => {
   };
 
   return (
-    <section className='section'>
+    <section className='section' >
+       
       <form className='form' onSubmit={handleSubmit}>
         <h5>login</h5>
         <div className='form-row'>
@@ -49,9 +50,9 @@ const Login = ({ setUser }) => {
           login
         </button>
       </form>
-      <div>
-      <ToggleQuestions />
-      </div>
+       <div className='section'>
+        <ToggleQuestions/>
+       </div>
     </section>
   );
 };
