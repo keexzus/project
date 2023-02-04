@@ -25,7 +25,7 @@ const AxiosExample = () => {
     };
   }
   return (
-    <section className='section text-center'>
+    <section className='section'>
       <button className='btn' onClick={fetchDadJoke}>
         random joke
       </button>

@@ -39,6 +39,6 @@ const Books = [
     id: 5,
 }
 
-];
+]
 
 export default Books; 

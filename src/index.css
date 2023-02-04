@@ -93,6 +93,23 @@ Variables
    
 }
 
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
   'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
@@ -105,15 +122,15 @@ body {
 .booklist {
     width: 80vw;
     height: 80vh;
-    max-width: 1000px;
-    margin: 5rem   auto ;
+    max-width: 900px;
+    margin: 5rem   auto;
     display: grid;
     gap: 2rem; 
      
     grid-template-columns: repeat(3, 1fr);
   
   }
-     @media screen and (min-width: 500px) {
+     @media screen and (min-width: 393px)  {
        .booklist {
         margin: 5rem auto;
       
@@ -125,7 +142,7 @@ body {
 .book {
   background: #ffff;
   border-radius: 1rem;
-  padding: 2 rem;
+  padding: 2rem;
   text-align: center;
   position: relative;
 }
@@ -136,8 +153,8 @@ body {
 }
 
 .book h2 {
-  margin-top: 1 rem;
-  font-size: 1 rem;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 /* < !-- HTML !--><button class="button-52" role="button">Button 52</button> */
@@ -230,13 +247,7 @@ h1 {
   font-style: bold;
   text-align: center;
   background: white;
-  /* margin-top: 3rem;
-  margin-bottom: 3rem; */
   
-  /* padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 3rem;
-  padding-left: 3rem; */
 }
 
 p {
@@ -257,15 +268,8 @@ p {
   /* margin: 0 auto; */
   display: flex;
   gap: 4rem;
-  
-  /* border-radius: 10% 10% 10% 10%;  */
-
 }
-
-/* .navbar:hover {
-  background: var(--primary-600:);
-  color: var(--primary-600:);
-} */
+  
 
 .link {
   color: var(--grey-500);
@@ -286,42 +290,13 @@ p {
   line-height: 1.5rem;
   text-align: center;
   justify-content: center;
-  width: 80vw;
+  width: 60vw;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
  
 
-.alert {
-  padding: 0.375rem 0.75rem;
-  margin-bottom: 1rem;
-  border-color: transparent;
-  border-radius: var(--borderRadius);
-}
-
-.alert-danger {
-  color: var(--red-dark);
-  background: var(--red-light);
-}
-
-.alert-success {
-  color: var(--green-dark);
-  background: var(--green-light);
-}
-
-/* form */
-
-/* .form {
-  width: 80vw;
-  max-width: 400px;
-  background: var(--white);
-  border-radius: var(--borderRadius);
-  box-shadow: var(--shadow-2);
-  padding: 2rem 2.5rem;
-  margin:  3rem 0;
-  
-} */
 
 .form {
   
@@ -439,13 +414,7 @@ p {
   margin-top: 0.75rem;
 }
 
-/* double name section! was causing Home page skewing right */
-/* .section {
-  width: 90vw;
-  max-width: var(--fixed-width);
-  margin: 0 auto;
-  padding-bottom: 2rem;
-} */
+
 
 .dad-joke {
   margin-top: 1rem;
@@ -495,7 +464,7 @@ p {
   top: 0;
   right: 0;
   font-size: 1rem;
-  padding: .8rem;
+  padding: .4rem;
   border-top-right-radius: 0rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;

@@ -1,6 +1,4 @@
 import React from "react";
-
-
 // in react, can only pass the data down
 // we can only pass props down
 import Books from './list-of-books.js'
@@ -10,8 +8,8 @@ const Booklist = () => {
      return (
         <section className='booklist section'>
             {Books.map((book, index) => {
-                return <Book {...book} key={book.id} number={index}  />;
-            })}; 
+                return <Book {...book} key={book.id} number={index}  />
+            })}
             
      </section>
     );
