@@ -9,6 +9,21 @@ const Navbar = () => {
       >
         Home
       </NavLink>
+
+      <NavLink
+        to='/login'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+      >
+        Login
+      </NavLink>
+
+        <NavLink
+        to='axiosexample'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+        > Jokes
+        </NavLink>
+
+
       <NavLink
         to='/about'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
@@ -21,18 +36,9 @@ const Navbar = () => {
       >
         Products
       </NavLink>
-      <NavLink
-        to='/login'
-        className={({ isActive }) => (isActive ? 'link active' : 'link')}
-      >
-        Login
-      </NavLink>
+    
         
-        <NavLink
-        to='axiosexample'
-        className={({ isActive }) => (isActive ? 'link active' : 'link')}
-        > Jokes
-        </NavLink>
+       
 
         <NavLink
         to='examplepage'
