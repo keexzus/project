@@ -123,16 +123,18 @@ body {
     width: 80vw;
     height: 80vh;
     max-width: 900px;
-    margin: 5rem   auto;
+    margin: 5rem auto;
     display: grid;
-    gap: 2rem; 
+    gap: 3rem; 
+    left: 0;
+    right: 0;
      
     grid-template-columns: repeat(3, 1fr);
   
   }
      @media screen and (min-width: 360px)  {
        .booklist {
-        margin: 5rem auto;
+        /* margin: 5rem auto; */
       
         grid-template-columns: repeat(3, 1fr);
       }
@@ -436,7 +438,7 @@ p {
 
 
 
-
+ 
 
 /* CSS
 .button-52 {
