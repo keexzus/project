@@ -16,7 +16,7 @@ const UseStateBasics = () => {
     <>
     <h1>{title}</h1>
     
-    <div className='container'>
+    <div className='section'>
 
     <button type='button' className='btn' onClick={handleClick}>
         Change Title

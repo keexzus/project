@@ -8,7 +8,7 @@ import './index.css'
 
 const Booklist = () => {
      return (
-        <section className='booklist section'>
+        <section className='booklist'>
             {Books.map((book, index) => {
                 return <Book {...book} key={book.id} number={index} />
             })}

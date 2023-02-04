@@ -21,7 +21,7 @@ const CounterStateCounter = () => {
        
           return(
          <>
-       <section className='section'>
+       <section className='section center'>
         
          
         <h2>Skills Counter:</h2>
