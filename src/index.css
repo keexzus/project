@@ -93,9 +93,7 @@ Variables
    
 }
 
- 
-
-.alert {
+ .alert {
   padding: 0.375rem 0.75rem;
   margin-bottom: 1rem;
   border-color: transparent;
@@ -122,22 +120,22 @@ body {
 
 
 .booklist {
-    width: 80vw;
+    width: 70vw;
     height: 80vh;
+    min-width:250px;
     max-width: 900px;
     margin: 5rem auto;
     display: grid;
-    gap: 3rem; 
+    gap: 2rem; 
     
-     
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   
   }
-     @media screen  (min-width: 393px)  {
+     @media screen and (min-width: 300px)  {
        .booklist {
         /* margin: 5rem auto; */
         /* width: 50%; */
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
      }
 
@@ -278,13 +276,15 @@ p {
 .navbar {
   
  
-  width: 90vw;
-  max-width: var(--max-width);
+  width: 60vw;
+  max-width: 
+  var(--max-width);
   margin-top: 2rem;
-  margin-left: 3rem;
-  /* margin: 0 auto; */
+  margin-left: 2rem;
+  margin: 1 auto;
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
+  
 }
   
 
