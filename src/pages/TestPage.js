@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+ 
 
 const ShowHide = () => {
   const [show, setShow] = useState(false);
@@ -9,6 +10,9 @@ const ShowHide = () => {
         show/hide
       </button>
       {show && <Item />}
+      </div>
+      <div className='section'>
+        
       </div>
     </>
   );
@@ -28,9 +32,10 @@ const Item = () => {
 
   return (
     <div style={{ marginTop: '2rem' }}  >
-      <h1>Window</h1>
-      <h2>size : {size}</h2>
+      <h1>Window (stretch window)</h1>
+      <h2>size : {size} px</h2>
     </div>
+   
   );
 };
 

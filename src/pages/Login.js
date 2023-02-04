@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ToggleQuestions from '../ToggleQuestions.js';
+
 const Login = ({ setUser }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -47,6 +49,9 @@ const Login = ({ setUser }) => {
           login
         </button>
       </form>
+      <div>
+      <ToggleQuestions />
+      </div>
     </section>
   );
 };

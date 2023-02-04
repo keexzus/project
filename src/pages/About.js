@@ -24,12 +24,12 @@ const CounterStateCounter = () => {
        <section className='section'>
         
          
-        <h2>Skills Counter</h2>
-        <h2>Get New Messages!</h2>
+        <h2>Skills Counter:</h2>
+        <h2>Get New Messages! </h2>
+         <h2> (Window must be Only tab)</h2>
         <h1>{value}</h1>
         
-        <button className='btn' onClick={() => setValue
-        (value +1)}>Increase Value 
+        <button className='btn' onClick={() => setValue(value +1)}>Increase Value 
         </button>
 
         <button className='btn' onClick={reset}>

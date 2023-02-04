@@ -31,13 +31,13 @@ const Navbar = () => {
         <NavLink
         to='axiosexample'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
-        > API
+        > Jokes
         </NavLink>
 
         <NavLink
         to='examplepage'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
-        > Example Page
+        > Heroes
         </NavLink>
 
         <NavLink
