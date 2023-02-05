@@ -122,11 +122,13 @@ body {
 .booklist {
     width: 80vw;
     height: 70vh;
-    min-width:390px;
+    min-width:370px;
     max-width: 900px;
     margin: 5rem auto;
     display: grid;
     gap: 2rem; 
+    left: 0;
+    right: 0;
     
     grid-template-columns: repeat(2, 1fr);
   

@@ -12,7 +12,7 @@ const Home = () => {
     <>
      
 
-    <section className='section'>
+    <section className='section center'>
      
       <UseStateBasics />
       <Booklist />
