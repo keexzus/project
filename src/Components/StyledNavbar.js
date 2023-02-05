@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <nav className='navbar center'>
       <NavLink
         to='/'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
@@ -30,6 +30,7 @@ const Navbar = () => {
       >
         Counter
       </NavLink>
+     
       <NavLink
         to='/products'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
@@ -38,8 +39,6 @@ const Navbar = () => {
       </NavLink>
     
         
-       
-
         <NavLink
         to='examplepage'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}

@@ -116,13 +116,14 @@ body {
   system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #f1f5f8;
   color: #222;
+   
 }
 
 
 .booklist {
     width: 80vw;
     height: 70vh;
-    min-width:370px;
+    min-width:400px;
     max-width: 900px;
     margin: 5rem auto;
     display: grid;
@@ -133,7 +134,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   
   }
-     @media screen and (min-width: 300px)  {
+     @media screen and (min-width: 400px)  {
        .booklist {
         /* margin: 5rem auto; */
         /* width: 50%; */
@@ -251,15 +252,20 @@ p {
 
 .navbar {
   
- 
-  width: 50vw;
-  /* max-width: 
-  var(--max-width); */
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin: 1 auto;
+  min-width:400px;
+  width: 80vw;
   display: flex;
+  margin-top: 2rem;
+  /* margin-left: 2rem; */
+  margin: 5 auto;
+  display: grid;
   gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  grid-template-columns: repeat(4, 1fr);
   
 }
   
