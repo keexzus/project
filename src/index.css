@@ -121,24 +121,24 @@ body {
 
 
 .booklist {
+    position:absolute;
     width: 80vw;
     height: 70vh;
-    min-width:400px;
+    min-width:390px;
     max-width: 900px;
     margin: 5rem auto;
     display: grid;
-    gap: 2rem; 
-    left: 0;
-    right: 0;
+    gap: 1rem; 
+    left: 0rem;
+    right: 0rem;
     
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   
   }
-     @media screen and (min-width: 400px)  {
+     @media only screen and (max-width: 500px)  {
        .booklist {
-        /* margin: 5rem auto; */
-        /* width: 50%; */
-        grid-template-columns: repeat(2, 1fr);
+        
+        grid-template-columns: repeat(1, 1fr);
       }
      }
 
@@ -255,7 +255,7 @@ p {
   min-width:400px;
   width: 80vw;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 5rem;
   /* margin-left: 2rem; */
   margin: 5 auto;
   display: grid;
