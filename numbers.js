@@ -8,7 +8,10 @@ const Booklist = () => {
      return (
         <section className='booklist section'>
             {Books.map((book, index) => {
-                return <Book {...book} key={book.id} number={index}  />
+                return <Book {...book} 
+                key={book.id} 
+                number={index} 
+                 />
             })}
             
      </section>
@@ -16,8 +19,8 @@ const Booklist = () => {
 };
 
 const Book = (props) => {
-    const { img, title, author, number } = props;    
-    // console.log(number);
+    const { img, title, author } = props;    
+    console.log(title);
     
     return (
         
@@ -26,18 +29,13 @@ const Book = (props) => {
         <h2>{title}</h2>
         <h2>{author}</h2>
         <div>
-        <span className='number'>{`# ${number + 1}`}</span>
+        {/* <span className='number'>{`# ${number + 1}`}</span> */}
         </div>
          </article>
          
     );
 };  
 
-// const Image = () => {
-//     <img src='https://m.media-amazon.com/images/I/41-Ii9NlK1L.jpg' 
-//     alt='The Book of Freedom: Exit the Simulation'/>
-// }
 
-// const Author = () => <h4>Keexzus</h4>
 
 export default Booklist; 
