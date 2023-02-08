@@ -8,7 +8,8 @@ const Booklist = () => {
      return (
         <section className='booklist section'>
             {Books.map((book, index) => {
-                return <Book {...book} 
+                return <Book 
+                {...book} 
                 key={book.id} 
                 number={index} 
                  />

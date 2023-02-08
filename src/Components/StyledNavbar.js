@@ -51,6 +51,14 @@ const Navbar = () => {
         > Test Page
         </NavLink>
 
+        
+        
+        {/* <NavLink
+        to='tabs'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+        > Tabs
+        </NavLink> */}
+
 
     </nav>
   );

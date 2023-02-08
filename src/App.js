@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home.js';
+// import Home from './pages/Home.js';
+// above home replaced with TabsHome
 import About from './pages/About.js';
 import Dashboard from './pages/Dashboard.js';
 import Login from './pages/Login.js';
@@ -14,6 +15,8 @@ import SharedLayout from './Components/SharedLayout.js';
 import AxiosExample from './pages/AxiosExample.js';
 import ExamplePage from './pages/ExamplePage.js';
 import TestPage from './pages/TestPage.js';
+import TabsHome from './pages/Tabs.js';
+ 
 
 // import Greeting from './greeting.js';
 // import Booklist from './numbers.js';
@@ -26,7 +29,7 @@ function App() {
     <BrowserRouter>
       <Routes>
          <Route path='/' element={<SharedLayout />}>
-           <Route index element={<Home />} />
+           <Route index element={<TabsHome />} />
             
             <Route path='about' element={<About />} />
 
@@ -48,6 +51,9 @@ function App() {
               <Route path='examplepage' element={<ExamplePage /> } />
 
               <Route path='testpage' element={<TestPage />} />
+ 
+
+              {/* <Route path='tabs' element={<Tabs />} /> */}
             
             
             </Route>
