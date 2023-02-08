@@ -123,10 +123,10 @@ body {
 .booklist {
     position:absolute;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
     min-width:390px;
     max-width: 900px;
-    margin: 5rem auto;
+    margin: 1rem auto;
     display: grid;
     gap: 1rem; 
     left: 0rem;
