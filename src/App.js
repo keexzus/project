@@ -16,6 +16,7 @@ import AxiosExample from './pages/AxiosExample.js';
 import ExamplePage from './pages/ExamplePage.js';
 import TestPage from './pages/TestPage.js';
 import TabsHome from './pages/Tabs.js';
+import SimpleCRM from './pages/SimpleCRM.js';
  
 
 // import Greeting from './greeting.js';
@@ -51,6 +52,8 @@ function App() {
               <Route path='examplepage' element={<ExamplePage /> } />
 
               <Route path='testpage' element={<TestPage />} />
+
+              <Route path='simplecrm' element={<SimpleCRM />} />
  
 
               {/* <Route path='tabs' element={<Tabs />} /> */}

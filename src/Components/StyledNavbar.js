@@ -51,6 +51,12 @@ const Navbar = () => {
         > Test Page
         </NavLink>
 
+        <NavLink
+        to='simplecrm'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+        > Simple CRM
+        </NavLink>
+
         
         
         {/* <NavLink
