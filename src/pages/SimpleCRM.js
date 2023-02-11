@@ -61,6 +61,7 @@ const ControlledInputs = () => {
     </div>
         <button type='submit' className='btn'> add person </button>
     {/* <button type='submit' onClick={handleSubmit}> add </button> */}
+        
 
     {people.map((person, index)=> {
     const { id, company, firstName, email } = person;
@@ -73,11 +74,16 @@ const ControlledInputs = () => {
          </div>
          );
          })}
+
+         
     
     </form>
         
-        
-   
+         <section className='section'>
+         
+         <button type='submit' className='btn'
+         onClick={() => setPeople([])}>delete all</button>
+         </section>
         
     </article>
     </>
