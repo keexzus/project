@@ -309,6 +309,7 @@ p {
   
   width: 80vw;
   max-width: 400px;
+   
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
@@ -325,7 +326,21 @@ p {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
-}
+ 
+  }
+
+  .form-label-2 {
+    display: block;
+    font-size: var(--small-text);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+    text-align:right;
+   
+    }
+
+
+
 
 .form-input,
 .form-textarea {
@@ -334,6 +349,7 @@ p {
   border-radius: var(--borderRadius);
   background: var(--backgroundColor);
   border: 1px solid var(--grey-200);
+   
 }
 
 .form-row {
@@ -354,6 +370,11 @@ p {
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
 }
+
+/* .form-div {
+  text-align: center;
+  justify-content: center;
+} */
 
 /* alert */
 

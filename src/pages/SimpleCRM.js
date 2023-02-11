@@ -28,9 +28,9 @@ const ControlledInputs = () => {
     <article className='section'>
         <form className='form' onSubmit={handleSubmit}>
 
-        <div className='form-control'>
-        <label htmlFor='company' >Company: </label>
-        <input 
+    <div className='form-label-2'>
+    <label htmlFor='company' >Company: </label>
+    <input 
     type='text' 
     id='company' 
     name='company' 
@@ -39,7 +39,7 @@ const ControlledInputs = () => {
     />
     </div>
         
-    <div className='form-control'>
+    <div className='form-label-2'>
         <label htmlFor='firstName' >Name: </label>
        <input 
     type='text' 
@@ -49,7 +49,7 @@ const ControlledInputs = () => {
     onChange={(e)=> setFirstName(e.target.value)}/>
         </div>
     
-    <div className='form-control'>
+    <div className='form-label-2'>
         <label htmlFor='email'>Email: </label>
         <input 
     type='text' 
@@ -61,20 +61,24 @@ const ControlledInputs = () => {
     </div>
         <button type='submit' className='btn'> add person </button>
     {/* <button type='submit' onClick={handleSubmit}> add </button> */}
-    
-    </form>
 
     {people.map((person, index)=> {
     const { id, company, firstName, email } = person;
     return (
-    <div className='item' key={id}>
+        <div className='item' key={id}>
         <h4>{company}</h4>
         <h4>{firstName}</h4>
         <p>{email}</p>
     
-    </div>
-    );
-    })}
+         </div>
+         );
+         })}
+    
+    </form>
+        
+        
+   
+        
     </article>
     </>
     );
