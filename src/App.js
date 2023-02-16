@@ -17,6 +17,7 @@ import ExamplePage from './pages/ExamplePage.js';
 import TestPage from './pages/TestPage.js';
 import TabsHome from './pages/Tabs.js';
 import SimpleCRM from './pages/SimpleCRM.js';
+import ExtraForms from "./pages/forms.js";
  
 
 // import Greeting from './greeting.js';
@@ -54,6 +55,8 @@ function App() {
               <Route path='testpage' element={<TestPage />} />
 
               <Route path='simplecrm' element={<SimpleCRM />} />
+
+              <Route path='extraforms' element={<ExtraForms />} />
  
 
               {/* <Route path='tabs' element={<Tabs />} /> */}

@@ -57,6 +57,12 @@ const Navbar = () => {
         > Simple CRM
         </NavLink>
 
+        <NavLink
+        to='extraforms'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+        > Forms
+        </NavLink>
+
         
         
         {/* <NavLink

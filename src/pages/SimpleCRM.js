@@ -7,27 +7,35 @@ const ControlledInputs = () => {
     const [people, setPeople] = useState([]);
     
     const handleSubmit = (e) => {
-    e.preventDefault();
-    if(firstName && email && company){
-    const person = { id: new Date().getTime().toString(), company:company, firstName:firstName, email:email};
-    setPeople((people)=> {
-    return [...people, person]
-    });
-    setCompany('')
-    setFirstName('')
-    setEmail('')
-    } else {
+      e.preventDefault();
+      if(firstName && email && company){
+      const person = { id: new Date().getTime().toString(), 
+        company:company, firstName:firstName, email:email};
+      setPeople((people)=> {
+      return [...people, person]
+      });
+      setCompany('')
+      setFirstName('')
+      setEmail('')
+      } else {
         console.log('empty values');
-    }
-    }
+      }
+     } 
+    //  trying to create removePerson button to remove single person
+     const removePerson = (idToRemove) => {
+        
+        const updatedUsers = people.filter(person => person.id !== idToRemove);
+        setPeople(updatedUsers);
+     }
+
+      
     
     // if property value matches variable, you can skip One step
-    //
     return (
     <>
     <article className='section'>
         <form className='form' onSubmit={handleSubmit}>
-
+        <h4>Simple CRM</h4>
     <div className='form-label-2'>
     <label htmlFor='company' >Company: </label>
     <input 
@@ -70,7 +78,11 @@ const ControlledInputs = () => {
         <h4>{company}</h4>
         <h4>{firstName}</h4>
         <p>{email}</p>
-    
+
+        <button onClick={() => 
+        removePerson(person.id)}
+            className='btn'>remove
+        </button>
          </div>
          );
          })}
