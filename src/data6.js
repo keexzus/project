@@ -27,7 +27,7 @@ const cocoText = [
     the layers of our marriage that could no longer be ignored.`,
 
     `Where we lived was a lively neighborhood, plush with suburban landscapes and architectural design from an America that 
-    still bled teh brazen feel of the 1940's; rolling immaculate lawns, walls of tall, perfectly pine-green hedges separating some 
+    still bled the brazen feel of the 1940's; rolling immaculate lawns, walls of tall, perfectly pine-green hedges separating some 
     of the buildings.`,
 
     'Every garden and every tree was always well manicured.',
