@@ -18,6 +18,7 @@ import TestPage from './pages/TestPage.js';
 import TabsHome from './pages/Tabs.js';
 import SimpleCRM from './pages/SimpleCRM.js';
 import ExtraForms from "./pages/forms.js";
+import CocoBook from './pages/TextGenerator.js'
  
 
 // import Greeting from './greeting.js';
@@ -55,6 +56,8 @@ function App() {
               <Route path='testpage' element={<TestPage />} />
 
               <Route path='simplecrm' element={<SimpleCRM />} />
+
+              <Route path='cocobook' element={<CocoBook /> } />
 
               <Route path='extraforms' element={<ExtraForms />} />
  
