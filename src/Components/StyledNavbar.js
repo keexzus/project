@@ -63,6 +63,11 @@ const Navbar = () => {
         >French Park
         </NavLink>
 
+        <NavLink
+        to='grocerylist'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+        >Grocery List</NavLink>
+
         {/* <NavLink
         to='extraforms'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
