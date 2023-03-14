@@ -690,9 +690,10 @@ p {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0.5rem;
+  left: 0rem;
   width: 20%;
   height: 100%;
+  padding: 1rem;
   font-family:'Courier New', Courier, monospace;
   background: var(--clr-white);
   display: grid;
@@ -715,7 +716,7 @@ main {
 .sidebar-toggle {
   position: fixed;
   top: 2rem;
-  left: 3rem;
+  left: 2rem;
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
