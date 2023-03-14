@@ -1,7 +1,14 @@
 import React from 'react';
+// import { useGlobalContext } from '../context';
 import { NavLink } from 'react-router-dom';
-const Navbar = () => {
+import { FaTimes } from 'react-icons/fa';
+
+ 
+const OriginalNavbar = () => {
+  //  const { openSidebar, openModal } = useGlobalContext(); 
+
   return (
+    <aside> 
     <nav className='navbar center'>
       <NavLink
         to='/'
@@ -68,6 +75,11 @@ const Navbar = () => {
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
         >Grocery List</NavLink>
 
+        
+        {/* <button className='close-btn' onClick={openSidebar}>
+          <FaTimes />
+        </button> */}
+
         {/* <NavLink
         to='extraforms'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
@@ -81,12 +93,13 @@ const Navbar = () => {
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
         > Tabs
         </NavLink> */}
-
-
-    </nav>
+        
+       
+      </nav>
+     </aside>
   );
 };
-export default Navbar;
+export default OriginalNavbar;
 
 
 /* <NavLink 
