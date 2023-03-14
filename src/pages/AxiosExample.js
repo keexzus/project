@@ -32,7 +32,7 @@ const AxiosExample = () => {
       <p className='dad-joke'>{joke}</p>
       <article className='section'>
         
-        Axios HTTP Library is used to retrive data.
+        Axios HTTP Library is used to retrieve data.
         API has joke limit.
       </article>
     </section>
