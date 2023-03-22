@@ -2,6 +2,7 @@
 import React from 'react';
 import { SlSocialTwitter } from "react-icons/sl";
 import { SlPencil } from 'react-icons/sl'
+import { SlSocialInstagram } from 'react-icons/sl'
 
 const sublinks = [
     {
@@ -14,8 +15,8 @@ const sublinks = [
     {
         page:'coco',
         links: [
-            {label:'Twitter', icon:<SlSocialTwitter/>,  url:'https://twitter.com/ELCOCOLETZI'},
-            {label:'Blog', icon:<SlPencil />, url:'https://ericcocoletzi.com/'},
+            
+            {label:'Instagram', icon:<SlSocialInstagram/>, url:'https://www.instagram.com/ericcocoletzi/'},
         ],
     },
     
