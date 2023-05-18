@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import data from '../data6.js';
 
 function CocoBook() {
-    const [ count, setCount ] = useState(0);
+    const [ count, setCount ] = useState(1);
     const [ text, setText ] = useState([]);
 
     const handleSubmit = (e) => {
@@ -29,6 +29,8 @@ function CocoBook() {
                 name="amount" 
                 id="amount"
                 min='1'
+                step='1'
+                max='8'
                 value={count}
                 onChange={(e) => setCount(e.target.value) }
                 />
