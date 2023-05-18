@@ -30,7 +30,7 @@ function CocoBook() {
                 id="amount"
                 min='1'
                 step='1'
-                max='8'
+                max='10'
                 value={count}
                 onChange={(e) => setCount(e.target.value) }
                 />
