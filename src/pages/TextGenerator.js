@@ -28,6 +28,7 @@ function CocoBook() {
                 type="number" 
                 name="amount" 
                 id="amount"
+                min='1'
                 value={count}
                 onChange={(e) => setCount(e.target.value) }
                 />
