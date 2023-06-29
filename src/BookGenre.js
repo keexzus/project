@@ -14,12 +14,13 @@ const BookGenre = ({books}) => {
      );
 };
  const Book = (props) => {
-    const { img, title, author } = props;    
+    const { img, title, author, buy } = props;    
     return (
         <article className='book'>
         <img src={img} alt={''}/>
         <h2>{title}</h2>
         <h2>{author}</h2>
+        <h2><a href={buy}>Buy</a></h2>
         <div>
       </div>
          </article>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Home from './pages/Home.js';
@@ -20,13 +20,8 @@ import SimpleCRM from './pages/SimpleCRM.js';
 import ExtraForms from "./pages/forms.js";
 import CocoBook from './pages/TextGenerator.js'
 import GroceryList from './pages/GroceryList.js'
+import newPage from './pages/newPage.js'
  
-
-// import Greeting from './greeting.js';
-// import Booklist from './numbers.js';
-// import UseStateBasics from './button-title.js';
-
-
 function App() {
    const [user, setUser] = useState(null);
   return (
@@ -63,19 +58,19 @@ function App() {
               <Route path='grocerylist' element={<GroceryList />} />
 
               <Route path='extraforms' element={<ExtraForms />} />
- 
 
-              {/* <Route path='tabs' element={<Tabs />} /> */}
+              <Route path='newpage' element={<newPage />} />
+ 
+             {/* <Route path='tabs' element={<Tabs />} /> */}
             
             
             </Route>
 
-             
-            
-           <Route path='*' element={<Error />} />
+               <Route path='*' element={<Error />} />
          </Routes>
       </BrowserRouter>
   );
-}
+} 
+ 
 
 export default App;

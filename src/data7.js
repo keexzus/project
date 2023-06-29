@@ -8,47 +8,47 @@ export const links = [
     },
     {
         id: 2,
-        url:'login',
+        url:'/login',
         text:'Login',
     },
     {
         id: 3,
-        url:'axiosexample',
+        url:'/axiosexample',
         text:'Jokes API',
     },
     {
         id:4,
-        url:'examplepage',
+        url:'/examplepage',
         text:'Heroes',
     },
     {
         id:5,
-        url:'products',
+        url:'/products',
         text:'Books',
     },
     {
         id:6,
-        url:'testpage',
+        url:'/testpage',
         text:'Window Size',
     },
     {
         id:7,
-        url:'about',
+        url:'/about',
         text:'Counter',
     },
     {
         id:8,
-        url:'simplecrm',
+        url:'/simplecrm',
         text:'CRM',
     },
     {
         id:9,
-        url:'cocobook',
+        url:'/cocobook',
         text:'Coco',
     },
     {
         id:10,
-        url:'grocerylist',
+        url:'/grocerylist',
         text:'Grocery List',
     }
 
