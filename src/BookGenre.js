@@ -20,7 +20,7 @@ const BookGenre = ({books}) => {
         <img src={img} alt={''}/>
         <h2>{title}</h2>
         <h2>{author}</h2>
-        <h2><a href={buy}>Buy</a></h2>
+        <button class='btn-2'><a href={buy}>Buy</a></button>
         <div>
       </div>
          </article>

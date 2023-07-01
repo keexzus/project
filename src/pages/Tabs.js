@@ -18,15 +18,15 @@ const TabsHome = () => {
         setBookItem(newBooks)
  }
     return(
-        <main>
-            <section className='section' onMouseOver={closeSubmenu}> 
-                <div >  
+        
+            <section className='section-3' onMouseOver={closeSubmenu}> 
+                 
                     <h2>Santanero Literature</h2>
         <Category filterItems={filterItems} />
         <BookGenre books={bookItem} />
-                </div>
+                
             </section>
-        </main>
+        
 
     )
 }

@@ -2,7 +2,7 @@
 const Books = [
     
 {
-    title: 'The Boo of Freedom: Exit the Simulation',
+    title: 'The Book of Freedom: Exit the Simulation',
     author: 'Keexzus',
     img: 'https://m.media-amazon.com/images/I/41-Ii9NlK1L.jpg',
     id: 1, 

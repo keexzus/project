@@ -240,7 +240,35 @@ h1 {
   color: var(--clr-primary-5);
 }
 
- 
+.btn-3 {
+
+  display: inline-block;
+    /* display: flex; */
+    background: var(--clr-orange-8:);
+    /* color: var(--clr-white); */
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius);
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: var(--spacing);
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+    
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    
+
+}
+
+.btn-3:hover {
+background: var(--clr-primary-1);
+color: var(--clr-primary-5);
+}
 
 
 p {
@@ -296,6 +324,48 @@ p {
   margin-right: auto;
   line-height: 1.5rem;
   text-align: center;
+  align-items: center; 
+  justify-content: center;
+  width: 80vw;
+  max-width: var(--max-width);
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.section-filter-buttons {
+  display: flex;
+  /* position: fixed; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem 0;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  max-width: var(--max-width);
+  /* margin: auto; */
+  left: 0;
+  right: 0;
+}
+
+.section-3 {
+  display: flex;
+  /* position: fixed; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem 0;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5rem;
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 80vw;
@@ -303,11 +373,7 @@ p {
   margin: auto;
   left: 0;
   right: 0;
-
-  
-   
 }
-
  
 
 
@@ -747,10 +813,13 @@ main {
 /* Top Navbar  */
 .nav {
   top: 1rem;
-  height: 5rem;
+  /* bottom: 2rem; */
+  height: 1.5rem;
   width: 60%;
+  /* top:5%; */
   left:30%;
   right:20%; 
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,6 +827,7 @@ main {
   /* var(--clr-primary-7); */
   /* border-radius: 5px 5px 5px 5px; */
   /* background: transparent; */
+   
   position: relative;
   z-index: 1;
 }
