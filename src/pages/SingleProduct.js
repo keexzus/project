@@ -37,11 +37,14 @@
 import React from 'react'
 import { Link, useParams  } from 'react-router-dom';
 import books from '../data';
+import { useGlobalContext } from '../context';
+
 const SingleProduct = () => {
     
     const { bookId } = useParams();
     console.log('parameter: ' + bookId)
     const book = books.find((book) =>  book.id === bookId )
+    const { closeSubmenu } = useGlobalContext()
     
     // console.log("the boook value is: " + book);
     // console.log(' the id of the book we are trying to find is: ' + bookId)
@@ -51,7 +54,7 @@ const SingleProduct = () => {
     const { title, author, img, id } = book;
 
     return (
-         <section className='section product'>
+         <section className='section product' onMouseOver={ closeSubmenu }>
             
             <img src={img} alt={title} />
             <h2>{title}</h2>
