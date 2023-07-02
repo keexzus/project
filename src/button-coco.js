@@ -5,7 +5,7 @@ import './index.css';
 const Category = ({filterItems}) => {
 
      return (
-          <div className='section-2'>
+          <div className='section-filter-buttons'>
              <button className='btn'
              onClick={() =>
             filterItems('keex')}

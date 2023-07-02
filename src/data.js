@@ -3,7 +3,7 @@
     id: '1',
     title: 'French Park',
     author: 'Eric Cocoletzi',
-
+    buy: 'https://www.amazon.com/FRENCH-PARK-Eric-Cocoletzi-ebook/dp/B0C4ZRT74T/ref=sr_1_1?crid=ELOD78CL4I4L&keywords=french+park+cocoletzi&qid=1688060672&sprefix=french+park+cocoletzi%2Caps%2C308&sr=8-1',
     img: 'https://m.media-amazon.com/images/I/71a4n1ZQ2uL.jpg',
     
    },

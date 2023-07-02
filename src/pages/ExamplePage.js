@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import '../index.css';
 import { data } from '../data2.js';
+import { useGlobalContext } from '../context';
 // import useState from 'react';
 const UseStateArray = () => {
     const [people, setPeople] = useState(data);
+    const { closeSubmenu } = useGlobalContext();
     
     const removeItem = (id) => {
       setPeople((oldPeople) => {
@@ -16,7 +18,7 @@ const UseStateArray = () => {
     
  return (
     <> 
-    <section className='section'>  
+    <section className='section' onMouseOver={closeSubmenu}>  
       {people.map((person) => {
             const { id, name } = person;
             return ( 
@@ -30,7 +32,7 @@ const UseStateArray = () => {
             );
         })}
         </section>
-        <div className='section'>  
+        <div class ='section' onMouseOver={closeSubmenu}>  
         <button className='btn-2' onClick={() => setPeople([])}>clear all</button>
         <button className='btn-2' onClick={() => setPeople(data)}>reset all</button>
         </div>

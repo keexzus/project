@@ -2,12 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ToggleQuestions from '../ToggleQuestions.js';
+import { useGlobalContext } from '../context';
 
 const Login = ({ setUser }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
   const navigate = useNavigate();
+  const { closeSubmenu } = useGlobalContext()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ const Login = ({ setUser }) => {
   };
 
   return (
-    <section className='section' >
+    <section className='section' onMouseOver={closeSubmenu} >
        
       <form className='form' onSubmit={handleSubmit}>
         <h5>login</h5>

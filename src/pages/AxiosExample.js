@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import '../index.css';
-
+import { useGlobalContext } from '../context';
 import { useState } from 'react';
  
 
@@ -10,6 +10,7 @@ const url = 'https://icanhazdadjoke.com/';
 
 const AxiosExample = () => {
   const [joke, setJoke] = useState('Click button for joke');
+  const { closeSubmenu } = useGlobalContext()
 
   const fetchDadJoke = async () => {
       try {
@@ -25,7 +26,7 @@ const AxiosExample = () => {
     };
   }
   return (
-    <section className='section'>
+    <section className='section' onMouseOver={closeSubmenu}>
       <button className='btn' onClick={fetchDadJoke}>
         random joke
       </button>

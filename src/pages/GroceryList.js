@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import List from '../List'
 import Alert from '../Alert.js'
+import { useGlobalContext } from '../context';
 
 const getLocalStorage = () => {
     let list = localStorage.getItem('list')
@@ -17,6 +18,7 @@ const GroceryList = () => {
     const [ list, setList ] = useState(getLocalStorage);
     const [ isEditing, setIsEditing ] = useState(false);
     const [ editID, setEditID ] = useState(null);
+    const { closeSubmenu } = useGlobalContext()
     const [ alert, setAlert ] = useState({
         show:false, 
         msg:'', 
@@ -72,7 +74,7 @@ const GroceryList = () => {
             localStorage.setItem('list',JSON.stringify(list))
         }, [list])
     return (
-        <section className='section-center-grocery'>
+        <section className='section-center-grocery' onMouseOver={closeSubmenu}>
             
             <form className='grocery-form' onSubmit={handleSubmit}>
             {alert.show && <Alert {...alert} removeAlert={showAlert}

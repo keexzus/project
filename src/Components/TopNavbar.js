@@ -15,11 +15,11 @@ const TopNavbar = () => {
     }
     const handleSubmenu = (e) => {
         if (!e.target.classList.contains('link-btn')){
-            closeSubmenu();
+            closeSubmenu(e);
         }
     }
     return (
-        <nav className='nav' onMouseOver={handleSubmenu}>
+        <nav className='nav' onMouseOver={handleSubmenu} >
             <div className='nav-center'>
                 {/* <div className='nav-header'>
                 </div> */}

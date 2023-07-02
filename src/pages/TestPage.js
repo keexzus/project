@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
- 
+import { useGlobalContext } from '../context';
 
 const ShowHide = () => {
   const [show, setShow] = useState(false);
+  const { closeSubmenu } = useGlobalContext();
   return (
     <>
-    <div className='section'>  
+    <div className='section' onMouseOver={closeSubmenu}>  
       <button className='btn' onClick={() => setShow(!show)}>
         show/hide
       </button>

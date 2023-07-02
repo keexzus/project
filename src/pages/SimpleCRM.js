@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useGlobalContext } from '../context';
 
 const ControlledInputs = () => {
     const [company, setCompany] = useState('')
     const [firstName, setFirstName] = useState('')
     const [email, setEmail] = useState('')
     const [people, setPeople] = useState([]);
+    const { closeSubmenu } = useGlobalContext()
     
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -33,7 +35,7 @@ const ControlledInputs = () => {
     // if property value matches variable, you can skip One step
     return (
     <>
-    <article className='section'>
+    <article className='section' onMouseOver={closeSubmenu}>
         <form className='form' onSubmit={handleSubmit}>
         <h4>Simple CRM</h4>
     <div className='form-label-2'>
