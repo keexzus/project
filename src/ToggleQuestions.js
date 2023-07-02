@@ -7,7 +7,7 @@ import './index.css';
 
 const ToggleQuestions = () => {
     const [questions,  ] = useState(data);
-    return <main>
+    return <>
         <div className='container'>
             <h3>Questions and Answers about Login</h3>
             <section className='info'>
@@ -17,7 +17,7 @@ const ToggleQuestions = () => {
                     })}
             </section>
         </div>
-    </main>
+    </>
 }
 
 export default ToggleQuestions 

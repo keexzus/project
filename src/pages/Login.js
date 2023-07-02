@@ -50,7 +50,7 @@ const Login = ({ setUser }) => {
           login
         </button>
       </form>
-       <div className='section'>
+       <div >
         <ToggleQuestions/>
        </div>
     </section>
