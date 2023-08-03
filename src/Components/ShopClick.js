@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FontAwesomeIcon from 'react-icons/fa'
+import { FaBeer } from 'react-icons/fa';
+// import { FontAwesomeIcon } from 'react-icons/fa'
+// import '@fortawesome/fontawesome-free/css/all.min.css'
 
 
 
@@ -15,7 +17,7 @@ const ShopClick = () => {
               >
 
             <button className='sidebar-shopping-cart'>
-            <FontAwesomeIcon icon={faCartShopping} />
+            <FaBeer />
             {/* <i class="fa fa-shopping-cart" aria-hidden="true"> </i> */}
             </button>
              
