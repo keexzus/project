@@ -804,7 +804,7 @@ main {
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .links a:hover {
