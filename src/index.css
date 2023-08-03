@@ -782,7 +782,7 @@ main {
 }
 .sidebar-toggle {
   position: fixed;
-  top: 1.00rem;
+  top: 1.25rem;
   left: 1.25rem;
   font-size: 2rem;
   background: transparent;
@@ -795,7 +795,7 @@ main {
 
 .sidebar-shopping-cart {
   position: fixed;
-  top: 1.00rem;
+  top: 3.50rem;
   right: 0.75rem;
   font-size: 2rem;
   background: transparent;
@@ -804,7 +804,7 @@ main {
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .links a:hover {
@@ -829,11 +829,15 @@ main {
   top: 1rem;
   /* bottom: 2rem; */
   height: 1.5rem;
-  width: 60%;
+  width: 100%;
   /* top:5%; */
-  left:20%;
-  right:20%; 
+  /* place-items: center; */
+  /* left:20%;
+  right:20%;  */
+  
   /* bottom:1rem; */
+
+  /* place-items: center; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -846,8 +850,9 @@ main {
   z-index: 1;
 }
 .nav-center {
-  width: 50vw;
+  width: 60vw;
   /* max-width: var(--max-width); */
+  /* width: 100%; */
   max-width: 900px
 }
 .nav-header {
@@ -860,8 +865,10 @@ main {
 .nav-links {
   display: block;
   justify-self: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr  1fr ;
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: 1fr 1fr   ;
+  /* above used to be fr fr fr */
   text-align: center;
   height: 100%;
   display: grid;
@@ -888,7 +895,8 @@ main {
   box-shadow: var(--dark-shadow);
   position: absolute;
   top: 4rem;
-  left: 50%;
+  /* left: 50%; */
+  left: 0;
   transform: translateX(-50%);
   z-index: 3;
   display: none;
