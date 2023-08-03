@@ -15,7 +15,8 @@ const ShopClick = () => {
               >
 
             <button className='sidebar-shopping-cart'>
-            <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+            <FontAwesomeIcon icon={faCartShopping} />
+            {/* <i class="fa fa-shopping-cart" aria-hidden="true"> </i> */}
             </button>
              
             </a>
