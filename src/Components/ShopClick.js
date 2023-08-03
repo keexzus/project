@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const ShopClick = () => {
 
-    // const { openSidebar, openModal } = useGlobalContext()
+    
     return(
         <div> 
 
