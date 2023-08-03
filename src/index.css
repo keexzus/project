@@ -795,8 +795,8 @@ main {
 
 .sidebar-shopping-cart {
   position: fixed;
-  top: 1.25rem;
-  right: 0.20rem;
+  top: 3.50rem;
+  right: 1.25rem;
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
@@ -832,7 +832,7 @@ main {
   width: 60%;
   /* top:5%; */
   left:30%;
-  right:30%; 
+  right:20%; 
   /* bottom:1rem; */
   display: flex;
   align-items: center;
