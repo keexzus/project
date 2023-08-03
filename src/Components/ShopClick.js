@@ -10,7 +10,7 @@ const ShopClick = () => {
     return(
         <div> 
 
-             <a href="https://64cb161cfbf4fd00087c8041--silver-croissant-3600d0.netlify.app/"
+             <a href="https://silver-croissant-3600d0.netlify.app/"
              target="_blank"
               >
 
