@@ -18,9 +18,10 @@ const Login = ({ setUser }) => {
     setUser({ name: name, email: email });
     navigate('/dashboard');
   };
+  //onMouseOver={closeSubmenu} inside section //
 
   return (
-    <section className='section' onMouseOver={closeSubmenu} >
+    <section className='section' onMouseOver={closeSubmenu}>
        
       <form className='form' onSubmit={handleSubmit}>
         <h5>login</h5>

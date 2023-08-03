@@ -793,6 +793,19 @@ main {
   animation: bounce 2s ease-in-out infinite;
 }
 
+.sidebar-shopping-cart {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+
 .links a:hover {
   background: var(--clr-grey-10);
   color: var(--clr-grey-2);
@@ -819,7 +832,7 @@ main {
   /* top:5%; */
   left:30%;
   right:20%; 
-  
+  /* bottom:1rem; */
   display: flex;
   align-items: center;
   justify-content: center;
