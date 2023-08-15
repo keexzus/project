@@ -774,7 +774,7 @@ p {
   top: 0rem;
   left: 0rem;
   width: 20%;
-  height: 70%;
+  height: 80%;
   padding: 1rem;
   font-family:'Courier New', Courier, monospace;
   background: var(--clr-white);
@@ -807,6 +807,7 @@ main {
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
+  z-index: 0;
 }
 
 .sidebar-shopping-cart {
@@ -820,7 +821,7 @@ main {
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
-  /* z-index: -1; */
+  z-index: 0;
 }
 
 .links a:hover {
