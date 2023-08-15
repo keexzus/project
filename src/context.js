@@ -23,7 +23,7 @@ const AppProvider = ({ children }) => {
       const closeSubmenu = (e) => {
         //check if curoser is still within the submenu area
     if(!e.target.classList.contains('submenu')) {
-        // setLocation({}); 
+        setLocation({}); 
         // reset the location to close the submenu
         setIsSubmenuOpen(false);
         }

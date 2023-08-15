@@ -86,6 +86,21 @@ Variables
  --green-dark: #0f5132;
 }
 
+
+
+.light-theme {
+  background: #f1f5f8;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+}
+.dark-theme {
+  background: #282c35;
+  --clr-font: #fff;
+  --clr-primary: #d23669;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -144,6 +159,7 @@ body {
 
  
 .book {
+  margin-top: 1rem;
   background: #ffff;
   border-radius: 1rem;
   padding: 2rem;
